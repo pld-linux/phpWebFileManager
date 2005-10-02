@@ -89,7 +89,6 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc doc/{AUTHOR,ChangeLog,COPYING,PN-MODULE-HOWTO,README,TODO}
-
 %dir %{_appdir}
 %{_appdir}/*.php
 %{_appdir}/icons
