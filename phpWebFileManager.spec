@@ -14,7 +14,7 @@ Requires:	webserver
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_appdir		/usr/share/%{name}
+%define		_appdir	/usr/share/%{name}
 
 %description
 phpWebFileManager is file management PHP tool. It is designed for
@@ -22,20 +22,15 @@ inclusion into large projects using appropriate PHP mechanisms, in
 example require() or similar function. However, it can be also used as
 a standalone web application.
 
-FEATURES
-
 The most important features offered by phpWebFileManager are:
-
-    - easy and straightforward installation
-    - secure directory browsing
-    - directory creating, renaming and removing
-    - file creating, uploading, renaming, deleting and viewing
-    - file edition and saving
-    - huge configuration ability to allow/deny appropriate actions
-    - PostNuke module (add-on) compatibility
-    - multilanguage support
-
-and others.
+- easy and straightforward installation
+- secure directory browsing
+- directory creating, renaming and removing
+- file creating, uploading, renaming, deleting and viewing
+- file edition and saving
+- huge configuration ability to allow/deny appropriate actions
+- PostNuke module (add-on) compatibility
+- multilanguage support.
 
 %prep
 %setup -q
