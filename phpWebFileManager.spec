@@ -100,11 +100,10 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{AUTHOR,ChangeLog,COPYING,PN-MODULE-HOWTO,README,TODO}
+%doc doc/{AUTHOR,ChangeLog,PN-MODULE-HOWTO,README,TODO}
 %dir %{_appdir}
 %{_appdir}/*.php
 %{_appdir}/icons
 %{_appdir}/lang
 %{_appdir}/plugins
-
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/httpd/%{name}.conf
