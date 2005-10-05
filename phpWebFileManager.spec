@@ -1,4 +1,5 @@
-Summary:	phpWebFileManager
+Summary:	phpWebFileManager - file management PHP tool
+Summary:	phpWebFileManager - narzêdzie w PHP do zarz±dzania plikami
 Name:		phpWebFileManager
 Version:	0.7
 Release:	0.1
@@ -8,9 +9,9 @@ Source0:	http://platon.sk/upload/_projects/00004/%{name}-%{version}.tar.gz
 # Source0-md5:	1057eed9fbb6dca9de7d6b62c3ff7f47
 Source1:	%{name}.conf
 URL:		http://platon.sk/projects/phpWebFileManager/
-Requires:	php-pcre
 Requires:	php
-Requires:	webserver
+Requires:	php-pcre
+Requires:	webserver = apache
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,9 +33,25 @@ The most important features offered by phpWebFileManager are:
 - PostNuke module (add-on) compatibility
 - multilanguage support.
 
+%description -l pl
+phpWebFileManager to narzêdzie w PHP do zarz±dzania plikami. Zosta³o
+zaprojektowane do w³±czania do du¿ych projektów przy u¿yciu
+odpowiednich mechanizmów PHP, na przyk³ad require() lub podobnej
+funkcji. Mo¿e byæ jednak u¿ywane tak¿e jako samodzielna aplikacja WWW.
+
+Najwa¿niejsze mo¿liwo¶ci oferowane przez phpWebFileManagera to:
+- ³atwa i prosta instalacja
+- bezpieczne przegl±danie katalogów
+- tworzenie, zmiana nazw i usuwanie katalogów
+- tworzenie, umieszczanie, zmiana nazw, usuwanie i ogl±danie plików
+- edycja i zapisywanie plików
+- du¿e mo¿liwo¶ci konfiguracji w celu umo¿liwienia/zabronienia
+  poszczególnych operacji
+- kompatybilno¶æ z modu³em PostNuke
+- obs³uga wielu jêzyków.
+
 %prep
 %setup -q
-#%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -90,5 +107,4 @@ fi
 %{_appdir}/lang
 %{_appdir}/plugins
 
-#%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/httpd/%{name}.conf
