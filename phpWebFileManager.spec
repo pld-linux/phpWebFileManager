@@ -1,5 +1,5 @@
 # TODO
-# - use apache config triggers template-apache-package.spec
+# - webapps
 Summary:	phpWebFileManager - file management PHP tool
 Summary:	phpWebFileManager - narzêdzie w PHP do zarz±dzania plikami
 Name:		phpWebFileManager
@@ -11,10 +11,9 @@ Source0:	http://platon.sk/upload/_projects/00004/%{name}-%{version}.tar.gz
 # Source0-md5:	1057eed9fbb6dca9de7d6b62c3ff7f47
 Source1:	%{name}.conf
 URL:		http://platon.sk/projects/phpWebFileManager/
-BuildRequires:	use template-apache-package.spec macros
-Requires:	php
-Requires:	php-pcre
+Requires:	php(pcre)
 Requires:	webserver = apache
+Requires:	webserver(php)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
