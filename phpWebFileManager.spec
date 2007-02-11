@@ -1,7 +1,7 @@
 # TODO
 # - webapps
 Summary:	phpWebFileManager - file management PHP tool
-Summary:	phpWebFileManager - narzêdzie w PHP do zarz±dzania plikami
+Summary(pl):	phpWebFileManager - narzêdzie w PHP do zarz±dzania plikami
 Name:		phpWebFileManager
 Version:	0.7
 Release:	0.1
