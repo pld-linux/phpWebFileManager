@@ -1,7 +1,7 @@
 # TODO
 # - webapps
 Summary:	phpWebFileManager - file management PHP tool
-Summary(pl):	phpWebFileManager - narzêdzie w PHP do zarz±dzania plikami
+Summary(pl.UTF-8):   phpWebFileManager - narzÄ™dzie w PHP do zarzÄ…dzania plikami
 Name:		phpWebFileManager
 Version:	0.7
 Release:	0.1
@@ -35,22 +35,22 @@ The most important features offered by phpWebFileManager are:
 - PostNuke module (add-on) compatibility
 - multilanguage support.
 
-%description -l pl
-phpWebFileManager to narzêdzie w PHP do zarz±dzania plikami. Zosta³o
-zaprojektowane do w³±czania do du¿ych projektów przy u¿yciu
-odpowiednich mechanizmów PHP, na przyk³ad require() lub podobnej
-funkcji. Mo¿e byæ jednak u¿ywane tak¿e jako samodzielna aplikacja WWW.
+%description -l pl.UTF-8
+phpWebFileManager to narzÄ™dzie w PHP do zarzÄ…dzania plikami. ZostaÅ‚o
+zaprojektowane do wÅ‚Ä…czania do duÅ¼ych projektÃ³w przy uÅ¼yciu
+odpowiednich mechanizmÃ³w PHP, na przykÅ‚ad require() lub podobnej
+funkcji. MoÅ¼e byÄ‡ jednak uÅ¼ywane takÅ¼e jako samodzielna aplikacja WWW.
 
-Najwa¿niejsze mo¿liwo¶ci oferowane przez phpWebFileManagera to:
-- ³atwa i prosta instalacja
-- bezpieczne przegl±danie katalogów
-- tworzenie, zmiana nazw i usuwanie katalogów
-- tworzenie, umieszczanie, zmiana nazw, usuwanie i ogl±danie plików
-- edycja i zapisywanie plików
-- du¿e mo¿liwo¶ci konfiguracji w celu umo¿liwienia/zabronienia
-  poszczególnych operacji
-- kompatybilno¶æ z modu³em PostNuke
-- obs³uga wielu jêzyków.
+NajwaÅ¼niejsze moÅ¼liwoÅ›ci oferowane przez phpWebFileManagera to:
+- Å‚atwa i prosta instalacja
+- bezpieczne przeglÄ…danie katalogÃ³w
+- tworzenie, zmiana nazw i usuwanie katalogÃ³w
+- tworzenie, umieszczanie, zmiana nazw, usuwanie i oglÄ…danie plikÃ³w
+- edycja i zapisywanie plikÃ³w
+- duÅ¼e moÅ¼liwoÅ›ci konfiguracji w celu umoÅ¼liwienia/zabronienia
+  poszczegÃ³lnych operacji
+- kompatybilnoÅ›Ä‡ z moduÅ‚em PostNuke
+- obsÅ‚uga wielu jÄ™zykÃ³w.
 
 %prep
 %setup -q
